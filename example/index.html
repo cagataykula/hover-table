@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<table class="size-chart" data-size-chart-table="in">
+			<thead class="size-guide__size-chart-header">
+				<tr>
+					<th>US</th>
+					<th>UK</th>
+					<th>EU</th>
+					<th>LENGTH (IN)</th>
+				</tr>
+			</thead>
+			<tbody class="size-guide__size-chart-body">
+				<tr>
+					<td>10C</td>
+					<td>9.5</td>
+					<td>26</td>
+					<td>6 2/3</td>
+				</tr>
+				<tr>
+					<td>10.5C</td>
+					<td>10</td>
+					<td>27</td>
+					<td>6 4/5</td>
+				</tr>
+				<tr>
+					<td>11C</td>
+					<td>10.5</td>
+					<td>28</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<td>11.5C</td>
+					<td>11</td>
+					<td>28.5</td>
+					<td>7 1/6</td>
+				</tr>
+				<tr>
+					<td>12C</td>
+					<td>11.5</td>
+					<td>29</td>
+					<td>7 1/3</td>
+				</tr>
+				<tr>
+					<td>12.5C</td>
+					<td>12</td>
+					<td>30</td>
+					<td>7 1/2</td>
+				</tr>
+				<tr>
+					<td>13C</td>
+					<td>12.5</td>
+					<td>31</td>
+					<td>7 2/3</td>
+				</tr>
+				<tr>
+					<td>13.5C</td>
+					<td>13</td>
+					<td>31.5</td>
+					<td>7 4/5</td>
+				</tr>
+				<tr>
+					<td>1Y</td>
+					<td>13.5</td>
+					<td>32</td>
+					<td>8</td>
+				</tr>
+				<tr>
+					<td>1.5Y</td>
+					<td>1</td>
+					<td>33</td>
+					<td>8 1/7</td>
+				</tr>
+				<tr>
+					<td>2Y</td>
+					<td>1.5</td>
+					<td>33.5</td>
+					<td>8 1/3</td>
+				</tr>
+				<tr>
+					<td>2.5Y</td>
+					<td>2</td>
+					<td>34</td>
+					<td>8 1/2</td>
+				</tr>
+				<tr>
+					<td>3Y</td>
+					<td>2.5</td>
+					<td>35</td>
+					<td>8 2/3</td>
+				</tr>
+				<tr>
+					<td>3.5Y</td>
+					<td>3</td>
+					<td>35.5</td>
+					<td>8 5/6</td>
+				</tr>
+				<tr>
+					<td>4Y</td>
+					<td>3.5</td>
+					<td>36</td>
+					<td>9</td>
+				</tr>
+				<tr>
+					<td>4.5Y</td>
+					<td>4</td>
+					<td>37</td>
+					<td>9 1/7</td>
+				</tr>
+				<tr>
+					<td>5Y</td>
+					<td>4.5</td>
+					<td>37.5</td>
+					<td>9 1/6</td>
+				</tr>
+				<tr>
+					<td>5.5Y</td>
+					<td>5</td>
+					<td>38</td>
+					<td>9 1/2</td>
+				</tr>
+				<tr>
+					<td>6Y</td>
+					<td>5.5</td>
+					<td>38.5</td>
+					<td>9 2/3</td>
+				</tr>
+			</tbody>
+		</table>
+		<script src="./index.js"></script>
+		<style>
+			.size-chart {
+				margin-top: 1rem;
+				overflow: hidden;
+				border-spacing: 0;
+				width: 100%;
+			}
+			.size-chart td,
+			.size-chart th {
+				width: 20%;
+			}
+			.size-guide__size-chart-header tr {
+				background-color: #f4f4f4;
+			}
+			.size-guide__size-chart-header th {
+				color: #757575;
+				font-weight: bold;
+				line-height: 1.14;
+				border-bottom: 0.0625rem solid #e5e5e5;
+        color: black;
+			}
+			.size-guide__size-chart-body td,
+			.size-guide__size-chart-header th {
+				height: 3rem;
+				font-size: 0.75rem;
+				text-align: center;
+				vertical-align: middle;
+			}
+			.size-guide__size-chart-body tr:nth-child(2n) {
+				background-color: #f4f4f4;
+			}
+
+			.primary-hover {
+				background-color: #00C3D7;
+				color: white;
+			}
+			.secondary-hover {
+				background-color: #00C3D799;
+				color: white;
+			}
+    </style>
+    <script src="../dist/hover-table.js"></script>
+    <script>
+      hoverTable('td', {
+        primaryClass: 'primary-hover',
+        secondaryClass: 'secondary-hover',
+        includeTableHead: false
+      })
+    </script>
+	</body>
+</html>
